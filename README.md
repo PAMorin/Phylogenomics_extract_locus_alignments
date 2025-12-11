@@ -43,11 +43,15 @@ Six-column bed file of locus coordinates (including optional sequence padding on
 
 **IMPORTANT**
 In the script, change the paths, pad, and output file name:
-REFERENCE_GENOME="path_to_your_reference_genome";
-QUERY_SEQUENCES="path_to_your_query_sequences";
-OUTPUT_DIR="path_to_your_output_directory";
-PAD=(int);
-OUTPUT_BED="your_bed_file_name";
+REFERENCE_GENOME="path_to_your_reference_genome"
+
+QUERY_SEQUENCES="path_to_your_query_sequences"
+
+OUTPUT_DIR="path_to_your_output_directory"
+
+PAD=(int)
+
+OUTPUT_BED="your_bed_file_name"
 
 ### Step 2
 
