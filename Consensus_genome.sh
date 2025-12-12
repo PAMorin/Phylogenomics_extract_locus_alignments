@@ -13,8 +13,7 @@
 # Uses bcftools to extract consensus genome from bam files in parallel (Slurm array). All bam files are in separate  subdirectories within a main directory, named as "species_sample". Bam files are named as "species_sample_dedup.bam", so that "species_sample" is the same for the directory and the first part of the file name. 
 
 module load bio/samtools/1.19
-module load bio/bcftools/1.11
-module load tools/rclone
+module load bio/bcftools/1.21
 module load tools/pigz/2.4
 
 set -eux
