@@ -28,8 +28,9 @@ git clone git@github.com:pmorin?????
 ## Executing program
 
 ### Step 1: Map locus sequences to a reference genome and generate a bed file for their coordinates.
+```
 sbatch UCE_map2ref_extract_bed.sh
-
+```
 **Required inputs:**
 Fasta file of locus sequences (example = uce-5k-probes.fasta)
 
@@ -57,9 +58,9 @@ OUTPUT_BED="your_bed_file_name"
 
 
 ### Step 2: generate consensus genomes from mpileup (bam) files for each sample
-
+```
 sbatch consensus_genome.sh
-
+```
 **Required inputs:**
 Bam file for each species WGS data aligned to the reference genome
 Indexed reference genome
@@ -71,9 +72,9 @@ Consensus genome sequence with IUPAC ambiguity codes.
 The default organization and naming structure required for the script is for each bam file name to start with <species_sample>, and to be in it's own subdirectory that is also named <species_sample> (e.g., the path to the bam file for <Felis_catus> would be /maindir/Felis_catus/Felis_catus_dedup.bam)
 
 ### Step 3: Extract the locus sequences from each consensus sequence
-
+```
 sbatch extract_loci_array.sh
-
+```
 **Required inputs:**
 Consensus sequence from Step 2
 Bed file from Step 1
@@ -96,9 +97,9 @@ Directory of locus alignments for each locus, containing the locus sequences for
 **IMPORTANT**
 
 ### Step 5: Filter files to remove locus alignments with more than a specified portion of N's in the alignment.
-
+```
 sbatch Filter_XpctN_alignments.sh
-
+```
 **Required inputs:**
 Directory of locus alignments for each locus from Step 4.
 
