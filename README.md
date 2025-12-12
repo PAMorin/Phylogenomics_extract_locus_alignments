@@ -12,9 +12,9 @@ This README describes a pipeline for identifying a set of gene (or other locus) 
 
 Before running the pipeline, make sure you have installed the following programs: 
 
-bwa-mem2/2.2.1
-samtools/1.19
-bedtools/2.31.1
+bwa-mem2/2.2.1  
+samtools/1.19  
+bedtools/2.31.1  
 htslib/1.19 (part of SAMtools and BCFtools, but may need to be installed separately to use bgzip, htsfile, and tabix utilities)
 
 
