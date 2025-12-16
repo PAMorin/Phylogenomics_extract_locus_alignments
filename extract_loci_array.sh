@@ -20,13 +20,13 @@ module load bio/htslib/1.19
 THREADS=5
 INDIR=/home/pmorin/projects/Miscellaneous/TEST_phylogenomics_extract_loc_align_repo
 FASTADIR=$INDIR/consensus_genomes
-BEDFILE=$INDIR/UCE_Oorc_GCA_937001465.bed.txt
+BEDFILE=$INDIR/UCE_Egla_GCA_028564815.1.bed.txt
 OUTPUTDIR=$INDIR/loci_out
 
 # Consensus sequences
 FASTAFILES=(
-Ccom_SRR12437578_angsd_consensus_genome.fa.gz
-Ccom_z480_angsd_consensus_genome.fa.gz
+B.b.acu_DRR014695_consensus_genome.fa.gz
+B.b.bor_SRR26062094_consensus_genome.fa.gz
 )
 
 ####--- end User-defined variables ---

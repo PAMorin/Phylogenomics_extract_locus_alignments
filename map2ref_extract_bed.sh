@@ -19,11 +19,11 @@ set -eux # halt if error, missing value; print commands first prints the command
 
 # --- User-defined variables ---
 # CHANGE THESE PATHS TO YOUR ACTUAL FILES AND DIRECTORIES
-REFERENCE_GENOME="/home/pmorin/Ref_genomes/Oorc/NCBI_GCA_937001465.1/GCA_937001465.1_mOrcOrc1.1_genomic.fna"
+REFERENCE_GENOME="/home/pmorin/Ref_genomes/Egla/GCA_028564815.1_mEubGla1_pri/GCA_028564815.1_mEubGla1.hap2_genomic.fna"
 QUERY_SEQUENCES="/home/pmorin/projects/Miscellaneous/TEST_phylogenomics_extract_loc_align_repo/uce-5k-probes.fasta"
 OUTPUT_DIR="/home/pmorin/projects/Miscellaneous/TEST_phylogenomics_extract_loc_align_repo"
 PAD=500  # Amount of base pairs to add to both sides of the alignment, e.g., for short loci like UCEs. Not needed for long loci (like full genes)
-OUTPUT_BED="${OUTPUT_DIR}/UCE_Oorc_GCA_937001465.bed.txt" # Output file name for the BED data
+OUTPUT_BED="${OUTPUT_DIR}/UCE_Egla_GCA_028564815.1.bed.txt" # Output file name for the BED data
 # --- end User-defined variables ---
 
 # Ensure the output directory exists
