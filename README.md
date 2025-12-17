@@ -64,7 +64,7 @@ Indexed reference genome
 
 **Outputs**  
 Consensus genome sequences  
-Each nucleotide call based on the most common base at the site. In the case of ties a random base is chosen among the bases with the same maximum counts. N's or filtered based are ignored. If multiple individuals are used the four bases are counted across individuals. Indels are ignored, so that the consensus sequence is the same length as the reference sequence.
+(Each nucleotide call based on the most common base at the site. In the case of ties a random base is chosen among the bases with the same maximum counts. N's or filtered based are ignored. If multiple individuals are used the four bases are counted across individuals. Indels are ignored, so that the consensus sequence is the same length as the reference sequence.)
 
 **IMPORTANT**  
 The default organization and naming structure required for the script is for each bam file name to start with <species_sample>, and to be in it's own subdirectory that is also named <species_sample> (e.g., the path to the bam file for <Felis_catus> would be /maindir/Felis_catus/Felis_catus_dedup.bam).
